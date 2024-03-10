@@ -1,0 +1,29 @@
+{
+  "name": "testable-api-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "cross-env NODE_ENV=test jest"
+  },
+  "jest": {
+    "setupFiles": [
+      "@babel/register"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.3",
+    "jest": "^29.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "@babel/register": "^7.23.7",
+    "cross-env": "^7.0.3",
+    "supertest": "^6.3.4"
+  }
+}
